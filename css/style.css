@@ -1,0 +1,15 @@
+body {
+    font-size: 15px;
+    line-height: 22px;
+    background-color: #fff;
+    font-family: Roboto, Arial, sans-serif;
+}
+.lead {
+    font-size: 36px;
+    line-height: 36px;
+    color: #000;
+}
+h3 {
+    font-size: 18px;
+    line-height: 30px;
+}
