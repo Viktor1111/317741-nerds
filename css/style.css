@@ -2,6 +2,7 @@ body {
     font-size: 15px;
     line-height: 22px;
     background-color: #fff;
+    font-weight: normal;
     font-family: Roboto, Arial, sans-serif;
 }
 .lead {
