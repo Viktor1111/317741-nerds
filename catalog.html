@@ -20,44 +20,48 @@
                <li><a href="#">Контакты</a></li>
             </ul>
             <div class="user-block">
-               <a href="#" class="basket"><img src="img/cart-icon.png.png" width="" height="" alt="корзина">Корзина</a>
+               <a href="#" class="basket">Корзина</a>
             </div>
          </nav>
          <h1>Магазин готовых шаблонов</h1>
       </header>
       <div class="catalog">
       <div class="catalog-column-left">
-         <form class="search" action="/echo" method="post">
-            <div class="cost-filter">
-               <div class="filter-title">Стоимость</div>
-               <div class="price-controls">
-                  <label class="min-price">от
-                  <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">до
-                  <input type="text" name="max-price" value="15000"></label>
-               </div>
-            </div>
+        <form class="search" action="/echo" method="post">
+            <div class="filter-title">Стоимость</div>
+                 <div class="range-filter">
+                 <div class="price-controls">
+                    <label class="min-price">от
+                         <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до
+                            <input name="max-price" type="text" value="15000"></label>
+                    </div>
+                    </div>
             <div class="layout">
                <div class="filter-title">Сетка:</div>
-               <label>
-               <input type="radio" name="group" value="adaptive" checked>Адаптивная</label>
-               <label>   
-               <input type="radio" name="group" value="fixed" >Фиксированная</label>
-               <label>
-               <input type="radio" name="group" value="stretch"> Резиновая</label>
+             <ul>
+             <li> <label>
+               <input type="radio" name="group" value="adaptive" checked>Адаптивная </label></li>
+              <li> <label>   
+               <input type="radio" name="group" value="fixed" >Фиксированная</label></li>
+             <li> <label>
+               <input type="radio" name="group" value="stretch"> Резиновая</label></li>
+             </ul>
             </div>
             <div class="features">
                <div class="filter-title">Особенности:</div>
-               <label>
-               <input type="checkbox" name="" checked>Слайдер</label>
-               <label>
-               <input type="checkbox" name="">Блок преимуществ</label>
-               <label>
-               <input type="checkbox" name="" checked>Новости</label>
-               <label>
-               <input type="checkbox" name="">Галерея</label>
-               <label>
-               <input type="checkbox" name="">Корзина</label>
+               <ul>
+               <li><label>
+               <input type="checkbox" name="" checked>Слайдер</label></li>
+               <li><label>
+               <input type="checkbox" name="">Блок преимуществ</label></li>
+               <li><label>
+               <input type="checkbox" name="" checked>Новости</label></li>
+               <li><label>
+               <input type="checkbox" name="">Галерея</label></li>
+               <li><label>
+               <input type="checkbox" name="">Корзина</label></li>
+                </ul>
             </div>
             <button type="submit" class="btn">Показать</button>
          </form>

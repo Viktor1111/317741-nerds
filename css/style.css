@@ -36,7 +36,7 @@ h3 {
     margin-top: 60px;
     margin-right: 200px;  
 }
-li {
+.nav-menu li {
     display: inline;
     margin-right: 60px;
 }
@@ -76,14 +76,28 @@ li {
 .catalog-column-left {
     background-color: aquamarine;
 }
-
+.layout li, .features li {
+    list-style-type: none;
+    padding-left: 40px;
+}
+button {
+    margin-left: 90px;
+}
+.filter-title, .range-filter {
+    padding-left: 90px;
+}
 .content-column-right {
+    padding-right: 200px;
     background-color: antiquewhite;
 }
 .works {
     display: flex;
     flex-wrap: wrap;
     background-color: dimgray;
+    padding-left: 50px;
+}
+.works li {
+    padding-right: 40px;
 }
 .column {
     display: flex;
@@ -125,7 +139,7 @@ li {
 .footer-social {
     margin-left: 200px;
     margin-right: 300px;
-   margin-top: 40px;
+    margin-top: 40px;
 }
 .footer-content {
     margin-left: 100px;
