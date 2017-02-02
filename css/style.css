@@ -9,57 +9,125 @@ body {
 .lead {
     font-size: 36px;
     line-height: 36px;
-    color: #000;
+    color: #000; 
+}
+h1 {
+    font-size: 40px;
+    padding-bottom: 60px;
+    margin-left: 400px;
 }
 h3 {
     font-size: 18px;
     line-height: 30px;
 }
 .main-header {
-    display: inline-block;
-    width: 1440px;
     background-color: darksalmon;
 }
+.main-navigation {
+    display: flex;
+    margin-left: auto;
+}
+.nav-logo {
+    margin-left: 90px;
+    margin-top: 40px;
+}
+.nav-menu {
+    margin-left: 200px;
+    margin-top: 60px;
+    margin-right: 200px;  
+}
+li {
+    display: inline;
+    margin-right: 60px;
+}
+.user-block {
+    margin-right: auto;
+    margin-top: 60px;
+}
+.slides {
+    display: flex;
+    margin-left: 90px;
+    margin-top: 60px; 
+}
+.slide-title {
+    font-size: 45px;
+    line-height: 70px;
+}
+
+.slider {
+    margin-top: 210px;
+    margin-left: 100px;
+    padding-bottom: 40px;
+}
 .categories {
-    display: inline-block;
-    width: 1440px;
+    display: flex;
     background-color: antiquewhite;
 }
+.production-web {
+    margin-left: 90px;
+    margin-right: 70px;
+}
+.production-pres {
+    margin-left: 70px;
+}
+.catalog {
+    display: flex;
+} 
 .catalog-column-left {
-    display: inline-block;
-    width: 1440px;
     background-color: aquamarine;
 }
+
 .content-column-right {
-    display: inline-block;
     background-color: antiquewhite;
 }
 .works {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     background-color: dimgray;
+}
+.column {
+    display: flex;
 }
 .column-left {
-    display: inline-block;
-    width: 700px;
+    width: 680px;
+    padding-right: 70px;
+    padding-left: 90px;
     background-color: dimgray;
 }
-.column-right {
-    display: inline-block;
-    width: 700px;
+.column-work {
+    font-size: 16px;
+    line-height: 40px;
+    color: #000;
+}
+.column-logo {
+    margin-left: 130px;
     background-color: bisque;
 }
+.column-right {
+    background-color: bisque;
+}
+.slogan {
+
+}
 .friends-logo {
-    display: inline-block;
-    width: 1440px;
+    display: flex;
+    padding-left: 90px;
+    width: 1350px;
     background-color: aquamarine;
 }
 .map {
-    display: inline-block;
-    width: 1440px;
     background-color:burlywood;
 }
 .main-footer {
-    display: inline-block;
-    width: 1440px;
+    display: flex;
     background-color:cadetblue;
+}
+.footer-social {
+    margin-left: 200px;
+    margin-right: 300px;
+   margin-top: 40px;
+}
+.footer-content {
+    margin-left: 100px;
+    margin-right: auto;
 }
