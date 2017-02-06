@@ -4,144 +4,223 @@ body {
     background-color: #fff;
     font-weight: normal;
     font-family: Roboto, Arial, sans-serif;
-    width: 1440px;
 }
+
+/* layout */
+
+.container {
+    width: 1160px;
+    justify-content:space-between;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+
+/* common */
+
+button {
+/*    margin-left: 140px;*/
+}
+
 .lead {
-    font-size: 36px;
-    line-height: 36px;
-    color: #000; 
+    font-size: 40px;
+    line-height: 40px;
+    color: #000;
 }
+
 h1 {
     font-size: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     margin-left: 400px;
+    margin-bottom: 0px;
+ 
 }
+
 h3 {
     font-size: 18px;
     line-height: 30px;
 }
+
+
+/* header */
+
 .main-header {
-    background-color: darksalmon;
+    background-color: #eeeeee;
 }
+
+/* nav */
+
 .main-navigation {
     display: flex;
-    margin-left: auto;
 }
 .nav-logo {
-    margin-left: 90px;
-    margin-top: 40px;
+/*    margin-left: 140px;*/
+    margin-top: 49px;
 }
 .nav-menu {
-    margin-left: 200px;
-    margin-top: 60px;
-    margin-right: 200px;  
+/*    margin-left: 200px;*/
+    margin-top: 82px;  
 }
 .nav-menu li {
     display: inline;
-    margin-right: 60px;
+    margin-right: 45px;
 }
 .user-block {
-    margin-right: auto;
-    margin-top: 60px;
+/*    margin-left: 245px;*/
+    margin-top: 82px;
 }
+
+
+/* Slider */
+
 .slides {
     display: flex;
-    margin-left: 90px;
-    margin-top: 60px; 
-}
+/*    margin-left: 140px;*/
+    margin-top: 60px;
+ }
+
 .slide-title {
     font-size: 45px;
     line-height: 70px;
 }
-
 .slider {
     margin-top: 210px;
-    margin-left: 100px;
+    margin-right: 500px;
     padding-bottom: 40px;
 }
+
+/* Categories */
+
 .categories {
     display: flex;
-    background-color: antiquewhite;
+    flex-wrap: wrap;
 }
 .production-web {
-    margin-left: 90px;
-    margin-right: 70px;
+/*    margin-left: 140px;*/
+/*    margin-right: 70px;*/
 }
+
 .production-pres {
-    margin-left: 70px;
+/*    margin-left: 70px;*/
 }
+
+/*Catalog*/
+
+
+
 .catalog {
-    display: flex;
+    
 } 
 .catalog-column-left {
-    background-color: aquamarine;
+/*    background-color: aquamarine;*/
 }
-.layout li, .features li {
+.layout ul, .features ul {
     list-style-type: none;
-    padding-left: 40px;
+    margin: 0;
+    padding-left: 140px;
 }
-button {
-    margin-left: 90px;
-}
+
 .filter-title, .range-filter {
-    padding-left: 90px;
+/*    padding-left: 140px;*/
 }
 .content-column-right {
-    padding-right: 200px;
-    background-color: antiquewhite;
+/*    padding-right: 200px;*/
+/*    background-color: antiquewhite;*/
+}
+.sort-block, .pagenav {
+    padding-left: 500px;
 }
 .works {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: dimgray;
+    
+/*    background-color: dimgray;*/
     padding-left: 50px;
 }
-.works li {
-    padding-right: 40px;
+.works a {
+    margin-right: 40px;
 }
+
+/* Promo */
+
 .column {
-    display: flex;
+
+    
 }
 .column-left {
-    width: 680px;
-    padding-right: 70px;
-    padding-left: 90px;
-    background-color: dimgray;
+   width: 600px;
+   margin-top: 80px;
+/*    padding-right: 100px;*/
+/*    padding-left: 140px;*/
+/*    background-color: dimgray;*/
 }
 .column-work {
-    font-size: 16px;
-    line-height: 40px;
-    color: #000;
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 700;
 }
+
 .column-logo {
-    margin-left: 130px;
-    background-color: bisque;
+    margin-top: 80px;
+/*    margin-left: 130px;*/
+/*    background-color: bisque;*/
 }
 .column-right {
-    background-color: bisque;
+/*    background-color: bisque;*/
 }
-.slogan {
+
+
+/* friends */
+
+.friends-logo {
+   opacity: 0.2;
+}
+
+
+/* map */
+
+.map {
+/*    background-color:burlywood;*/
+}
+
+
+/* footer */
+
+
+.main-footer {
+ 
+/*    background-color:cadetblue;*/
 
 }
-.friends-logo {
-    display: flex;
-    padding-left: 90px;
-    width: 1350px;
-    background-color: aquamarine;
-}
-.map {
-    background-color:burlywood;
-}
-.main-footer {
-    display: flex;
-    background-color:cadetblue;
-}
-.footer-social {
-    margin-left: 200px;
-    margin-right: 300px;
-    margin-top: 40px;
-}
+
 .footer-content {
-    margin-left: 100px;
-    margin-right: auto;
+    margin-right: 354px;
+    padding-top: 50px;
 }
+
+/* social */
+
+.social.fb {*/
+
+    background-position: -32px -23px;
+}
+
+.social.insta {
+
+/*    background-position: -27px -5px;*/
+}
+
+.social.vk {
+
+/*    background-position: -27px -36px;*/
+}
+
+.social {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-right: 4px;
+  margin-top: 60px; 
+  background: #000000 url("../img/sprite.png") no-repeat center;
+}
+
