@@ -1,9 +1,10 @@
 body {
     font-size: 16px;
     line-height: 22px;
-    background-color: #fff;
+    background-color: #ffff;
     font-weight: normal;
     font-family: Roboto, Arial, sans-serif;
+    
 }
 
 /* layout */
@@ -28,7 +29,10 @@ button {
 .lead {
     font-size: 40px;
     line-height: 40px;
+    font-weight: bold;
     color: #000;
+    margin-top: 50px;
+    margin-bottom: 32px;
 }
 
 h1 {
@@ -40,7 +44,7 @@ h1 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 30px;
 }
 
@@ -119,13 +123,17 @@ h3 {
     flex-wrap: wrap;
 }
 .production-web {
-/*    margin-left: 140px;*/
+    margin-top: 84px;
 /*    margin-right: 70px;*/
 }
 
-.production-pres {
-/*    margin-left: 70px;*/
+.production-app {
+    margin-top: 84px;
 }
+.production-pres {
+    margin-top: 84px;
+}
+
 
 /*Catalog*/
 
@@ -154,8 +162,6 @@ h3 {
     padding-left: 500px;
 }
 .works {
-    
-/*    background-color: dimgray;*/
     padding-left: 50px;
 }
 .works a {
@@ -163,31 +169,39 @@ h3 {
 }
 
 /* Promo */
-
-.column {
-
-    
+.column li {
+    list-style-type: none;
+}
+.column-right ul {
+    display: flex;
+    width: 360px;
+    margin-left: 100px;
 }
 .column-left {
-   width: 600px;
    margin-top: 80px;
-/*    padding-right: 100px;*/
-/*    padding-left: 140px;*/
-/*    background-color: dimgray;*/
+   padding-right: 50px;    
 }
 .column-work {
     font-size: 20px;
     line-height: 60px;
     font-weight: 700;
+    margin-top: 35px;
 }
-
+.column-right-work {
+    margin-left: 130px;
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.right-work {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 20px;
+}
 .column-logo {
     margin-top: 80px;
-/*    margin-left: 130px;*/
-/*    background-color: bisque;*/
-}
-.column-right {
-/*    background-color: bisque;*/
+    margin-left: 130px;
+    margin-bottom: 35px;
 }
 
 
