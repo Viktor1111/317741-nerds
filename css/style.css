@@ -1,5 +1,5 @@
 body {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 22px;
     background-color: #fff;
     font-weight: normal;
@@ -9,11 +9,13 @@ body {
 /* layout */
 
 .container {
-    width: 1160px;
+    width: 1200px;
     justify-content:space-between;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -62,15 +64,35 @@ h3 {
 /*    margin-left: 200px;*/
     margin-top: 82px;  
 }
+.nav-btn {
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+.active {
+    border-bottom: 3px solid;
+    border-color: #fb565a;
+}
 .nav-menu li {
     display: inline;
     margin-right: 45px;
+    
+}
+.nav-menu a:hover {
+    color: #e74246;
+}
+.nav-menu a:active {
+    color: #cacaca;
 }
 .user-block {
 /*    margin-left: 245px;*/
     margin-top: 82px;
 }
-
+.user-block a:hover {
+    color: #e74246;
+}
+.user-block a:active {
+    color: #cacaca;
+}
 
 /* Slider */
 
@@ -171,14 +193,20 @@ h3 {
 
 /* friends */
 
-.friends-logo {
-   opacity: 0.2;
+.opacity {
+  filter: opacity(0.2);
 }
-
-
+.opacity:hover {
+    filter: opacity(1);
+}
+.opacity:active {
+    filter: opacity(0.1);
+}
 /* map */
 
 .map {
+    position: relative
+   
 /*    background-color:burlywood;*/
 }
 
@@ -201,7 +229,7 @@ h3 {
 
 .social.fb {*/
 
-    background-position: -32px -23px;
+/*    background-position: -31px -23px;*/
 }
 
 .social.insta {
@@ -221,6 +249,9 @@ h3 {
   border-radius: 40px;
   margin-right: 4px;
   margin-top: 60px; 
-  background: #000000 url("../img/sprite.png") no-repeat center;
+  background: #000000 url("img/sprite.png") no-repeat center;
+  font-size: 0px;
+  text-decoration: none;
+
 }
 
