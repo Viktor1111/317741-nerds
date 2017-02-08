@@ -28,18 +28,19 @@ button {
 
 .lead {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
     font-weight: bold;
     color: #000;
     margin-top: 50px;
     margin-bottom: 32px;
 }
 
-h1 {
+.main-header h1 {
     font-size: 40px;
-    padding-bottom: 80px;
-    margin-left: 400px;
-    margin-bottom: 0px;
+    padding-bottom: 90px;
+    text-align: center;
+    padding-top: 85px;
+    padding-left: 20px;
  
 }
 
@@ -109,6 +110,20 @@ h3 {
 .slide-title {
     font-size: 45px;
     line-height: 70px;
+}
+.slide-text a {
+    display: inline-block;
+    width: 242px;
+    height: 40px;
+    text-decoration: none;
+    background: #fb565a;
+    text-align: center;
+    padding-top: 15px;
+    color: #feeded;
+}
+
+.slide-btn {
+    font-size: 15px;
 }
 .slider {
     margin-top: 210px;
@@ -185,7 +200,7 @@ h3 {
     font-size: 20px;
     line-height: 60px;
     font-weight: 700;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .column-right-work {
     margin-left: 130px;
@@ -241,31 +256,37 @@ h3 {
 
 /* social */
 
-.social.fb {*/
-
-/*    background-position: -31px -23px;*/
-}
-
-.social.insta {
-
-/*    background-position: -27px -5px;*/
-}
-
-.social.vk {
-
-/*    background-position: -27px -36px;*/
-}
-
-.social {
+.footer-social a {
   display: inline-block;
   width: 80px;
   height: 80px;
   border-radius: 40px;
   margin-right: 4px;
   margin-top: 60px; 
-  background: #000000 url("img/sprite.png") no-repeat center;
+  background-image: url(../img/sprite.png);
+  background-color: #000000;
+  background-repeat: no-repeat;  
   font-size: 0px;
   text-decoration: none;
 
 }
+.social.vk {
+    background-position: 27px 19px;
+}
+.social.fb {
+   background-position: -64px 19px;
+}
+
+.social.insta {
+    background-position: -153px 19px;
+}
+.footer-social a:hover {
+   background-color: #e74246;
+}
+.footer-social a:active {
+   background-color: #d7373b;
+}
+
+
+
 
