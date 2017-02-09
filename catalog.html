@@ -22,7 +22,7 @@
                <li><a class="nav-btn" href="#">Контакты</a></li>
             </ul>
             <div class="user-block">
-               <a href="#" class="basket">Корзина</a>
+               <a href="#" class="basket"><img src="img/cart-icon.png.png" width="" height="" alt="basket">Корзина</a>
             </div>
          </nav>
          <h1>Магазин готовых шаблонов</h1>
@@ -32,6 +32,13 @@
             <form class="search" action="/echo" method="post">
                <div class="filter-title">Стоимость</div>
                <div class="range-filter">
+                  <div class="range-controls">
+                     <div class="scale">
+                        <div class="bar"></div>
+                     </div>
+                     <div class="toggle toggle-min"></div>
+                     <div class="toggle toggle-max"></div>
+                  </div>
                   <div class="price-controls">
                      <label class="min-price">от
                      <input name="min-price" type="text" value="0"></label>
