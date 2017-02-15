@@ -61,7 +61,7 @@ p {
 
 .main-header {
     background-color: #eeeeee;
-/*    height: 545px;*/
+    height: 545px;
 }
 
 /* nav */
@@ -72,6 +72,12 @@ p {
 }
 .nav-logo {
     margin-top: 49px;
+}
+.nav-logo:hover {
+  opacity: 0.8;
+}
+.nav-logo:active {
+  opacity: 0.3;
 }
 .nav-menu {
     margin-top: 77px;
@@ -109,7 +115,7 @@ p {
     color: #cacaca;
 }
 .user-block img {
-    margin-right: 26px;
+    margin-right: 20px;
 }
 
 /* Slider */
@@ -129,20 +135,22 @@ p {
     left: 50%;
     width: 200px;
     height: 10px;
-    margin-left: -100px;
+    margin-left: -93px;
     text-align: center;
     z-index: 1000;
+    margin-bottom: 16px;
 }
 .slider-controls label {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 9px;
+    height: 9px;
 /*    margin: 0 3px;*/
     background: #ffffff;
-    border: 3px solid white;
+    border: 5px solid white;
     vertical-align: top;
     border-radius: 50%;
     cursor: pointer;
+    margin-right: 12px;
 }
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
@@ -218,7 +226,7 @@ p {
 .categories {
     display: flex;
     justify-content: space-between;
-    padding-top: 78px;
+    padding-top: 77px;
 }
 .categories p {
     line-height: 24px;
@@ -403,17 +411,24 @@ p {
     text-align: right;
 }
 .column-right ul {
-/*    width: 345px;*/
+    padding: 0; 
     display: flex;
-/*    flex-wrap: wrap;*/
-/*    justify-content: space-around;*/
+    margin-left: 140px;
+    justify-content: space-between;
+/*    text-align: left;*/
+}
+.column-right li {
+/*    align-items: center;*/
     text-align: left;
+    padding-right: 15px;
+    
 }
 .column-left {
     width: 660px;
 }
 .column-left ul {
     margin-top: 13px;
+    padding-left: 38px;
 }
 .column-left li {
     line-height: 48px;
@@ -425,7 +440,7 @@ p {
     height: 2px;
     background: #fb565a;
     position: absolute;
-    left: -40px;
+    left: -37px;
     top: 24px;
 }
 .column-work {
@@ -459,7 +474,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding-bottom: 78px;
-    padding-top: 47px;
+    padding-top: 50px;
 }
 .opacity {
     filter: opacity(0.2);
@@ -477,6 +492,108 @@ p {
     min-width: 1200px;    
 }
 
+.letter {
+  position: absolute;
+  top: 69%;
+  transform: translateY(-50%);
+  left: 54%;
+  margin-left: -580px;
+}
+.letter a {
+  display: inline-block;
+  text-decoration: none;
+  background: #f85559;
+  width: 217px;
+  height: 50px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+/*pop-up*/
+
+.modal-content {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 960px;
+  height: 592px;
+  background: #ffffff;
+  box-shadow: 0 30px 50px #717272;
+}
+.modal-in {
+  position: relative;
+  width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-content-title {
+  padding-top: 72px;
+  font-weight: 500;
+  font-size: 45px;
+  padding-bottom: 40px;
+  margin: 0;
+}
+.modal-in input {
+  display:block;
+}
+.modal-input {
+  font-weight: bold;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 28px;
+}
+.name-input {
+  width: 360px;
+  height: 50px;
+}
+.e-mail {
+  width: 360px;
+  height: 50px;
+}
+textarea {
+  color: #b1b1b1;
+  padding-top: 12px;
+}
+.modal-content-letter{
+  font-weight: bold;
+  line-height: 30px;
+}
+.modal-send {
+  width: 260px;
+  height: 50px;
+  background-color: #fb565a;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+  border: 0;
+  margin-top: 33px;
+  border-radius: 3px;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 80px;
+  left: 750px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-image: url(../img/close-cros.png);
+  cursor: pointer;
+  opacity: 0.3;
+  border: 0;
+  padding: 0;
+}
+.modal-content-close:hover {
+  opacity: 1;
+}
+.modal-content-close:active {
+  opacity: 0.1;
+}
 
 /* footer */
 
@@ -494,13 +611,16 @@ p {
 /*    line-height: 20px;*/
 }
 .footer-content h2 {
-/*    line-height: 20px;*/
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 40px;
 }
 
 /* social */
 
 .footer-social {
-    margin-top: -3px;
+    margin-top: 12px;
     width: 33.3%;
 }
 .footer-social a {
@@ -533,7 +653,5 @@ p {
 .footer-social a:active {
        background-color: #d7373b;
 }
-
-
 
 

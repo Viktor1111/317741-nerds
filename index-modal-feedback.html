@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>обратная связь</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="modal-content">
+         <div class="modal-in">
+            <h2 class="modal-content-title">Напишите нам</h2>
+            <form action="echo" method="post">
+               <div class="modal-input">
+                  <label>Ваше имя
+                  <input class="name-input" type="text" placeholder="Представьтесь, пожалуйста" ></label>
+                  <label>Ваш e-mail<input class="e-mail" type="text" name="mail" placeholder="Для отправки ответа">
+                  </label> 
+               </div>
+               <div class="modal-letter">
+                  <label class="modal-content-letter">Текст письма
+                  <textarea rows="6" cols="92">В свободной форме </textarea> </label>
+               </div>
+               <input class="modal-send" type="submit" value="ОТПРАВИТЬ">
+            </form>
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+         </div>
+      </div>
+   </body>
+</html>
