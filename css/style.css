@@ -787,6 +787,7 @@ p {
   background: #ffffff;
   box-shadow: 0 30px 50px #717272;
   z-index: 2;
+  display: none;
 }
 .modal-in {
   position: relative;
@@ -864,6 +865,9 @@ textarea {
 .modal-content-close:active {
   opacity: 0.1;
 
+}
+.modal-content-show {
+  display: block;
 }
 
 /* footer */
