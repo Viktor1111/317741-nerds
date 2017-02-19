@@ -125,13 +125,13 @@
          <a href="#"><img src="img/logo-4.png.png" width="" height="" alt="mishka" class="opacity"></a>
       </div>
       <div class="map">
-         <img src="img/map.jpg" width="100%" height="" alt="карта">
-         <div class="contacts">  
-           <h4>NЁRDS DESIGN STUDIO</h4>
-           <p><span class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</span><br>тел. +7 (812) 275-75-75</p>
+         <img src="img/map.jpg" width="100%" height="100%" alt="карта">
+         <div class="contacts">
+            <h4>NЁRDS DESIGN STUDIO</h4>
+            <p><span class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</span><br>тел. +7 (812) 275-75-75</p>
             <a class="contacts-feedback" href="#">НАПИШИТЕ НАМ</a>       
          </div>
-     </div>
+      </div>
       <footer class="main-footer container">
          <div class="footer-social">
             <a href="#" class="social vk">в контакте</a>
@@ -143,5 +143,38 @@
             <p> Скидка 10% для друзей из социальных сетей.</p>
          </div>
       </footer>
+      <div class="modal-content">
+         <div class="modal-in">
+            <h2 class="modal-content-title">Напишите нам</h2>
+            <form action="echo" method="post">
+               <div class="modal-input">
+                  <label>Ваше имя
+                  <input class="name-input" type="text" placeholder="Представьтесь, пожалуйста" ></label>
+                  <label>Ваш e-mail<input class="e-mail" type="text" name="mail" placeholder="Для отправки ответа">
+                  </label> 
+               </div>
+               <div class="modal-letter">
+                  <label class="modal-content-letter">Текст письма
+                  <textarea rows="6" cols="92">В свободной форме </textarea> </label>
+               </div>
+               <input class="modal-send" type="submit" value="ОТПРАВИТЬ">
+            </form>
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+         </div>
+      </div>
+      <script> 
+         var link = document.querySelector(".contacts-feedback");
+         var popup = document.querySelector(".modal-content");
+         var close = popup.querySelector(".modal-content-close");
+         
+         link.addEventListener("click", function(event) {
+           event.preventDefault();
+           popup.classList.add("modal-content-show");
+         });
+         close.addEventListener("click", function(event) {
+           event.preventDefault();
+           popup.classList.remove("modal-content-show");
+         });
+      </script>
    </body>
 </html>

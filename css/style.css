@@ -276,7 +276,6 @@ p {
     color: #74c69a;
 }
 .production-pres {
-/*    width: 300px;*/
     margin-right: 60px;
 }
 .production-pres a {
@@ -302,13 +301,10 @@ p {
 
 /*Catalog*/
 
-.catalog.container {
+.catalog {
     display: flex;
+    justify-content: space-between;
     padding-top: 22px;
-}
-.catalog-column-left {
-  padding-right: 141px;
-  padding-top: 3px;
 }
 .filter-title {
    font-size: 19px;
@@ -381,6 +377,9 @@ p {
   font-weight: bold;
   margin-top: 26px;
   text-align: center;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 .catalog-column-left button:hover {
   background: #dfdfdf;
@@ -389,15 +388,16 @@ p {
   background: #d5d5d5;
   color: #a8a8a8;
 }
+.sort-block {
+  display: flex;
+  justify-content: flex-end;
+}
 .srt-link {
   text-decoration: none;
   font-size: 14px;
-  padding-right: 22px;
+  padding-right: 33px;
   color: #6b6b6b;
   opacity: 0.3;
-}
-.srt-link:nth-child(3n) {
-  padding-right: 32px;
 }
 .srt-link:hover {
   opacity: 0.6;
@@ -408,25 +408,29 @@ p {
 .srt-text {
   font-size: 18px;
   font-weight: bold;
-  padding-right: 263px;
+  align-self: flex-start;
+  margin-right: auto;
 }
 
 .icon-down {
-  padding-left: 22px;
   width: 14px;
   height: 11px;
   background: url(../img/sprite.png);
-  background-position: -840px -93px;
+  background-position: -851px -100px;
   opacity: 0.2;
+  position: relative;
+  top: 4px;
 }
 
 .icon-up {
-  padding-left: 32px;
   width: 14px;
   height: 11px;
   background: url(../img/sprite.png);
-  background-position: -730px -93px;
+  background-position: -749px -100px;
   opacity: 0.2;
+  position: relative;
+  top: 4px;
+  margin-left: 14px;
 }
 .icon-down:hover,.icon-up:hover {
   opacity: 0.4;
@@ -436,25 +440,28 @@ p {
 }
 
 /*shop*/
+
 .works {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  justify-content: space-between;
+  width: 760px;
   padding-top: 50px;
 }
 .works a {
-/*    position: relative;*/
     display: inline-block;
-    margin-right: 40px;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
 }
 .work {
   position: relative;
-}
+ }
+
 .work:before {
    display: block;
-    content: url(../img/browser.png.png);
-    opacity: 0.12;
+   content: url(../img/browser.png.png);
+   opacity: 0.12;
+   cursor: pointer;
+   height: 40px;
 }
 .work:hover:before {
   opacity: 1;
@@ -913,10 +920,10 @@ textarea {
 
 }
 .social.vk {
-        background-position: 27px 26px;
+        background-position: 25px 27px;
 }
 .social.fb {
-       background-position: -64px 22px;
+       background-position: -65px 25px;
 }
 
 .social.insta {
