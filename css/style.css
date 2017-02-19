@@ -144,7 +144,6 @@ p {
     display: inline-block;
     width: 9px;
     height: 9px;
-/*    margin: 0 3px;*/
     background: #ffffff;
     border: 5px solid white;
     vertical-align: top;
@@ -750,8 +749,6 @@ p {
   left: 50%;
   margin-left: -580px;
   background: #ffffff;
-/*  width: 320px;*/
-/*  height: 310px;*/
   padding:  50px;
 }
 .contacts h4 {
