@@ -740,7 +740,13 @@ p {
 
 .map {
     position: relative;
-    min-width: 1200px;    
+    min-width: 1200px;
+    height: 420px;
+    background: url(../img/map.jpg) no-repeat center center;
+}
+.map img {
+  width: 100%;
+  height: auto;
 }
 .contacts {
   position: absolute;
