@@ -22,7 +22,7 @@ body {
 
 /* common */
 
-button {
+.btn {
 
 }
 
@@ -750,19 +750,19 @@ p {
   left: 50%;
   margin-left: -580px;
   background: #ffffff;
-  width: 320px;
-  height: 310px;
+/*  width: 320px;*/
+/*  height: 310px;*/
+  padding:  50px;
 }
 .contacts h4 {
   font-size: 18px;
-  padding-top: 29px;
-  padding-left: 50px;
+  margin-top: 0px;
 }
 .contacts p {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  padding-left: 50px;
+/*  padding-left: 50px;*/
 }
 .contacts .address {
   display: inline-block;
@@ -778,8 +778,18 @@ p {
   text-align: center;
   line-height: 50px;
   color: #ffffff;
-  margin-left: 50px;
-  margin-top: 22px;
+/*  margin-left: 50px;*/
+/*  margin-top: 22px;*/
+}
+.contacts-feedback {
+  margin-top: 20px;
+}
+.contacts-feedback:hover {
+  background: #e74246;
+}
+.contacts-feedback:active {
+    background-color: #d7373b;
+    color: #e38486;
 }
 
 /*pop-up*/
@@ -850,6 +860,13 @@ textarea {
   border: 0;
   margin-top: 33px;
   border-radius: 3px;
+}
+.modal-send:hover {
+  background: #e74246;
+}
+.modal-send:active {
+    background-color: #d7373b;
+    color: #e38486;
 }
 
 .modal-content-close {
