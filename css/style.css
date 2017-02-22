@@ -4,7 +4,7 @@ body {
     background-color: #ffffff;
     font-weight: normal;
     font-family: Roboto, Arial, sans-serif;
-    
+    min-width: 1200px;
 }
 
 /* layout */
@@ -56,7 +56,7 @@ p {
 
 .main-header {
     background-color: #eeeeee;
-/*    height: 545px;*/
+   
 }
 
 /* nav */
@@ -359,6 +359,9 @@ p {
     margin-right: 25px;
   
 }
+.features label {
+  cursor: pointer;
+}
  .features label:before { 
     content: "";
     width: 27px;
@@ -384,6 +387,7 @@ p {
     border: 0;
     padding: 0;
     cursor: pointer;
+    border-radius: 3px;
 }
 .catalog-column-left button:hover {
     background: #dfdfdf;
@@ -391,6 +395,7 @@ p {
 .catalog-column-left button:active {
     background: #d5d5d5;
     color: #a8a8a8;
+    border-top: 4px solid #bfbfbf;
 }
 .sort-block {
     display: flex;
@@ -452,28 +457,25 @@ p {
     width: 760px;
     padding-top: 50px;
 }
-.works a {
-    display: inline-block;
-    margin-bottom: 32px;
-}
 .work {
     position: relative;
+    margin-bottom: 32px;
  }
 
-.work:before {
+.work > a:before {
      display: block;
      content: url(../img/browser.png.png);
      opacity: 0.12;
      cursor: pointer;
      height: 40px;
 }
-.work:hover:before {
+.work:hover > a:before {
     opacity: 1;
 }
 .works-window {
     position: absolute;
-    top: 390px;
-    width: 360px;
+    bottom: 0px;
+    width: 100%;
     height: 230px;
     background: #eeeeee;
     text-align: center;
@@ -488,6 +490,8 @@ p {
     margin-bottom: 10px;
 }
 .works-window a {
+    display:  inline-block;
+    margin-bottom: 32px;
     width: 200px;
     height: 50px;
     line-height: 50px;
@@ -510,6 +514,7 @@ p {
 
 .pagenum {
     display: inline-block;
+    vertical-align: top;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -519,6 +524,7 @@ p {
     text-decoration: none;
     background: url(../img/page-active.png);
     margin-right: 7px;
+    border-radius: 3px;
 }
 
 .pagenum:nth-child(2) {
@@ -541,6 +547,8 @@ p {
 }
 .pagenum:active {
     background: #d5d5d5;
+    height: 47px;
+    border-top: 3px solid #bfbfbf;
 }
 .range-filter {
     padding-top: 52px;
@@ -739,7 +747,7 @@ p {
 
 .map {
     position: relative;
-    min-width: 1200px;
+/*    min-width: 1200px;*/
     height: 420px;
     background: url(../img/map.jpg) no-repeat center center;
 }
@@ -833,24 +841,48 @@ p {
     padding-bottom: 28px;
 }
 .modal-input input {
-    padding-left: 10px;
+    padding: 0 15px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #444444;
+    box-sizing: border-box;
 }
+
 .name-input {
-    width: 360px;
+    width: 370px;
     height: 50px;
 }
 .e-mail {
-    width: 360px;
+    width: 370px;
     height: 50px;
 }
 textarea {
-    color: #b1b1b1;
-    padding-top: 12px;
-    padding-left: 10px;
+    padding: 10px 15px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
+.name-input:hover, .e-mail:hover, textarea:hover {
+    border: 2px solid #b4b9bb;
+}
+.name-input:focus, .e-mail:focus, textarea:focus {
+    border: 2px solid #000000;
+    outline: none;
 }
 .modal-content-letter{
     font-weight: bold;
     line-height: 30px;
+    display: block;
+}
+.modal-content-letter textarea {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    display: block;
 }
 .modal-send {
     width: 260px;
@@ -932,11 +964,18 @@ textarea {
      margin-right: 4px;
 /*      margin-top: 60px; */
      background-image: url(../img/sprite.png);
-     background-color: #000000;
+     background-color: #e1e1e1;
      background-repeat: no-repeat;  
      font-size: 0px;
      text-decoration: none;
-
+      
+}
+.footer-social a:hover {
+      background-color: #e74246;
+}
+.footer-social a:active {
+      background-color: #d7373b;
+      box-shadow:  inset 0 3px 0 0 #c13135;
 }
 .social.vk {
       background-position: 25px 27px;
@@ -944,15 +983,17 @@ textarea {
 .social.fb {
       background-position: -65px 25px;
 }
-
 .social.insta {
       background-position: -153px 26px;
 }
-.footer-social a:hover {
-      background-color: #e74246;
+.social.vk:active {
+      background-position: -198px -156px;
 }
-.footer-social a:active {
-      background-color: #d7373b;
+.social.fb:active {
+      background-position: -288px -158px;
+}
+.social.insta:active {
+      background-position: -376px -157px;
 }
 
 
